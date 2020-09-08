@@ -1,0 +1,35 @@
+{
+	"name": "auth",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "node -r esm src/index.js",
+		"dev": "nodemon -r esm src/index.js",
+		"build": "node -r esm ./node_modules/.bin/sequelize-cli db:migrate"
+	},
+	"dependencies": {
+		"apollo-server-express": "^2.17.0",
+		"bcrypt": "^5.0.0",
+		"body-parser": "^1.19.0",
+		"cookie-parser": "^1.4.5",
+		"dataloader": "^2.0.0",
+		"email-validator": "^2.0.4",
+		"esm": "^3.2.25",
+		"express": "^4.17.1",
+		"graphql-validation-complexity": "^0.4.2",
+		"jsonwebtoken": "^8.5.1",
+		"prettier": "^2.1.1",
+		"sequelize": "^6.3.5",
+		"sequelize-cli": "^6.2.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.4",
+		"sqlite3": "^5.0.0"
+	},
+	"prettier": {
+		"useTabs": true,
+		"singleQuote": true,
+		"printWidth": 100,
+		"semi": true,
+		"jsxSingleQuote": true
+	}
+}
